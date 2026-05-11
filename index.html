@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Słodki format - Katowice</title>
+</head>
+<body>
+    <header>
+        <img src="icon2.png" alt="Słodki format" class="logo">   
+        <nav> 
+            <div class="nav_kontent">
+                <a href="#galeria">Galeria</a>
+                <a href="index.html">Strona główna</a>
+                <a href="menu.html">Menu</a>
+                <a href="#onas">O nas</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <button  type="button" class="burger">☰</button>
+        </nav>
+        
+        <div class="socjale">
+            <a href="https://www.facebook.com/kawiarniasweethome/?locale=pl_PL" target="_blank" class="socjal"><img src="fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/slodkiformatkatowice/" target="_blank" class="socjal"><img src="ig.png" alt="Instagram"></a>
+            <a href="tel:555-555-555" class="socjal"><img src="tel.png" alt="telefon"></a>
+        </div>
+    </header>
+    <main>
+        <h2>Sztuka ukryta w smaku</h2>
+        <p>Odkryj autorskie monoporcje i torty, które powstają z pasji do rzemieślniczego cukiernictwa. Każdy detal ma znaczenie</p>
+        <a href="menu.html">Poznaj naszą ofertę</a>
+    </main>
+    <section id="galeria">
+        <h2>Nasze słodkości</h2>
+        <div class="przyciski">
+            <button type="button" onclick="zmiana(1)"><h3>Śniadania</h3></button>
+            <button type="button" onclick="zmiana(2)"><h3>Słodkości</h3></button>
+            <button type="button" onclick="zmiana(3)"><h3>Kawy</h3></button>
+        </div>
+            <section class="galeria torty">
+                <img src="śniadania/sniad1.png" alt="">
+                <img src="śniadania/sniad2.png" alt="">
+                <img src="śniadania/sniad3.png" alt="">
+                <img src="śniadania/sniad4.png" alt="">
+            </section>
+            <section class="galeria ciastka">
+                <img src="słodkosci/slodk1.png" alt="">
+                <img src="słodkosci/slodk2.png" alt="">
+                <img src="słodkosci/slodk3.png" alt="">
+                <img src="słodkosci/slodk4.png" alt="">
+            </section>
+            <section class="galeria kawy"> 
+                   <img src="kawy/kaw1.png" alt="kawa">
+                   <img src="kawy/kaw2.png" alt="kawa">
+                   <img src="kawy/kaw3.png" alt="kawa">
+                   <img src="kawy/kaw4.png" alt="kawa">
+            </section>
+    </section>
+    <section id="kontakt">
+        <form action="index.html" method="post">
+            <h2>Skontaktuj się z nami</h2>
+            <label for="name">Imię:</label> 
+            <input type="text" id="name" name="name" required placeholder="Np. Tomasz"><br>
+
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required placeholder="Np. tomek@poczta.pl"> <br>
+
+            <label for="message">Wiadomość:</label> <br>
+            <textarea id="message" name="message" required placeholder="Twoja wiadomość..."></textarea> <br>
+
+            <button type="submit">Wyślij wiadomość</button>
+        </form>
+    </section>
+    <footer>
+    <p>&copy; 2026 Słodki format - Katowice. Wszelkie prawa zastrzeżone.</p>
+    <div class="socjale">
+            <a href="https://www.facebook.com/kawiarniasweethome/?locale=pl_PL" target="_blank" class="socjal"><img src="fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/slodkiformatkatowice/" target="_blank" class="socjal"><img src="ig.png" alt="Instagram"></a>
+            <a href="tel:555-555-555" class="socjal"><img src="tel.png" alt="telefon"></a>
+        </div>
+    <a href="readme.html">readme</a>
+    </footer>
+</body>
+</html>
