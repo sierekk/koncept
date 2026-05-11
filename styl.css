@@ -279,8 +279,13 @@ footer .socjale img{
         align-self: center;
     }
     .galeria{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 100%;
+    }
+    .galeria img{
+        height: auto;
+        width: 40%;
+        max-width: none;
     }
     form textarea{
         width: 100%;
